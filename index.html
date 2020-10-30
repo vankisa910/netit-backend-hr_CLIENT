@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <div id="header" class="wrapper">
+            <h1 class = "logo">Easy Job</h1>
+
+            <div id = "hr-manager">
+                <ul id="hr--menu">
+                    <li data-controller="adpost">All jobs</li>
+                    <li data-controller="aboutus">About us</li>
+                    <li data-controller="contacts">Contacts</li>
+                    <li data-controller="terms">Terms and Conditions</li>
+                    <li data-controller="faq">FAQ</li>
+                    <li id="menu-signup" data-controller="signup">Sign up</li>
+                    <li id="menu-signin" data-controller="signin">Sign in</li>
+                    <li id="menu-company" data-controller="company">Companies</li>
+                    <li id="menu-signout">Sign out</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id     = "content"  
+             class  = "wrapper"></div>
+             
+        <div id="footer"></div>
+        
+        <script src="lib/jquery.js"></script>
+        <script src="lib/ajax.js"></script>
+        <script src="lib/template.js"></script>
+        <script src="src/api/http.api.js"></script>
+        <script src="src/api/api.js"></script>
+        <script src="src/managers/Router.js"></script>
+        <script src="src/managers/Auth.js"></script>
+        <script src="src/controllers/aboutus/AboutusController.js"></script>
+        <script src="src/controllers/adpost/AdpostController.js"></script>
+        <script src="src/controllers/contacts/ContactsController.js"></script> 
+        <script src="src/controllers/faq/FaqController.js"></script>
+        <script src="src/controllers/signin/SigninController.js"></script>
+        <script src="src/controllers/signout/SignoutController.js"></script>
+        <script src="src/controllers/signup/SignupController.js"></script>
+        <script src="src/controllers/terms/TermsController.js"></script>  
+        <script src="src/controllers/company/CompanyController.js"></script>  
+      
+        <footer class="footer">©2015-2020 Easy Job. All rights reserved. Easy Job is a registered trade mark.</footer>
+    </body>
+</html>
