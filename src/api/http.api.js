@@ -71,6 +71,6 @@ HttpApi.user.signin = (body, callback) => {
     Ajax.postJSON(url('user/signin'), body, (ajaxObject, res) => { callback(res); });
 };
 
-HttpApi.user.signup = (body, callback) => {
-    Ajax.postJSON(url('user/signup'), body, (ajaxObject, res) => { callback(res); });
-};
+//HttpApi.user.signup = (body, callback) => {
+//    Ajax.postJSON(url('user/signup'), body, (ajaxObject, res) => { callback(res); });
+//};

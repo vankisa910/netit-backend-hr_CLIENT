@@ -11,14 +11,14 @@
     };
     var _contructor = () => {
         
-        $dom.signinUserNameInput       = $("#signin--user-name");
+        $dom.signinUsernameInput       = $("#signin--user-name");
         $dom.signinUserPasswordInput   = $("#signin--user-pass");
         
         $dom.signinSubmitAction        = $("#signin--submit"); 
         $dom.signinSubmitAction.on('click', function() {
            
-           if($dom.signinUserNameInput.val().length === 0) {
-              $dom.signinUserNameInput.after("<p>The field is required!</p>");
+           if($dom.signinUsernameInput.val().length === 0) {
+              $dom.signinUsernameInput.after("<p>The field is required!</p>");
               return;
            }
            
@@ -28,7 +28,7 @@
            }
            
            var request = {
-               username   : $dom.signinUserNameInput.val(),
+               username   : $dom.signinUsernameInput.val(),
                password   : $dom.signinUserPasswordInput.val()
            };
            
