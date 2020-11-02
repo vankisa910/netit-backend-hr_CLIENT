@@ -17,11 +17,11 @@
         var content = templateItem.content;
         var id      = templateItem.id;
 
-        return `<div class   ="post" 
+        return `<div class   = "post" 
                      data-id = "${id}">
-                    <span  class = "post-title"> "${title}"</span>
+                    <span  class = "post-title"> ${title}</span>
                     <div   class = "post-content">
-                         <p> "${content}"</p>
+                         <p> ${content}</p>
                     </div>   
                     <div>
                          <p>First Name:</p>
@@ -84,7 +84,7 @@
        });
     };
 
-    AdpostControllerByCategory = {
+    AdpostbycategoryController = {
         init : _templateBootstrap
     };
 })();
