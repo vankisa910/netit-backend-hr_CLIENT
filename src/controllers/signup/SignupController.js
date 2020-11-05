@@ -71,19 +71,18 @@
               return; 
            }
                    
-//           var request = {
-//               fname    : $dom.signupFirstNameInput.val(),
-//               lname    : $dom.signupLastNameInput.val(),
-//               city     : $dom.signupCityInput.val(),
-//               country  : $dom.signupCountryInput.val(),
-//               username : $dom.signupUsernameInput.val(),
-//               password : $dom.signupPasswordInput.val(),
-//               password : $dom.signupPasswordInput.val(),
-//               email    : $dom.signupEmailInput.val(),
-//               phone    : $dom.signupPhoneInput.val()
-//            };
-//           
-//            Api.http.user.signup(request)
+           var request = {
+               fname    : $dom.signupFirstNameInput.val(),
+               lname    : $dom.signupLastNameInput.val(),
+               city     : $dom.signupCityInput.val(),
+               country  : $dom.signupCountryInput.val(),
+               username : $dom.signupUsernameInput.val(),
+               password : $dom.signupPasswordInput.val(),
+               email    : $dom.signupEmailInput.val(),
+               phone    : $dom.signupPhoneInput.val()
+            };
+           
+            Api.http.user.signup(request);
         });
     };
     
