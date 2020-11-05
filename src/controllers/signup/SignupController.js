@@ -55,22 +55,16 @@
               return;
            }
            
-           var regexEmailPattern = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/g;
-           var regexPhone        = /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/g;
-
-           var emailValidator = $dom.signupEmailInput.match(regexEmailPattern);
-           var phoneValidator = $dom.signupPhoneInput.match(regexPhone);
-         
-           if(emailValidator === null) {
-              $dom.signupEmailInput.after("<p>Email format is not valid!</p>");
+           if($dom.signupEmailInput.val().length < 8) {
+              $dom.signupEmailInput.after("<p>At least 8 characters required!</p>");
               return;
            }
-
-           if(phoneValidator === null) {
-              $dom.signupPhoneInput.after("<p>Phone format is not valid!</p>");
-              return; 
+           
+           if($dom.signupPhoneInput.val().length < 8) {
+              $dom.signupPhoneInput.after("<p>At least 8 characters required!</p>");
+              return;
            }
-                   
+           
            var request = {
                fname    : $dom.signupFirstNameInput.val(),
                lname    : $dom.signupLastNameInput.val(),
